@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Refaccionarias La Comercial</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row banner">
+            <div class="col-sm-2">
+                <img id="imgLogo" class="img-responsive" src="img/logo.png" />
+            </div>
+            <div class="col-sm-8">
+                <hgroup>
+                    <h1>REFACCIONARIA</h1>
+                    <h2> LA UAM </h2>
+                </hgroup>
+            </div>
+            <div class="col-sm-2">
+                <img id="imgLogo" class="img-responsive" src="img/logo2.png" />
+            </div>
+        </header>
+    </div>
+
+    <div class="container mainContent">
+        <div class="sectionHeader row">
+            <div class="col-sm-12">
+                <h3>CONSULTA DE REFACCIONES</h3>
+
+            </div>
+        </div>
+
+        <form class="form-group form-inline">
+            <label for="marca">Marca:</label>
+            <select id="marca" class="form-control marginRight">
+                    <option value="Toyota">Toyota</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Ford">Ford</option>
+                </select>
+
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" class="form-control marginRight">
+                    <option value="Deportivo">Deportivo</option>
+                    <option value="Sedan">Sedán</option>
+                </select>
+
+            <label for="modelo">Modelo:</label>
+            <select id="modelo" class="form-control marginRight">
+                    <option value="Supra">Supra</option>
+                    <option value="Skylan">Skylan</option>
+                    <option value="Viper">Viper</option>
+                    <option value="Mustang">Mustang</option>
+                </select>
+
+            <label for="refaccion">Refacción:</label>
+            <select id="refaccion" class="form-control marginRight">
+                    <option value="bujia">Bujía</option>
+                    <option value="frenos">Frenos</option>
+                    <option value="balatas">Balatas</option>
+                    <option value="rotulos">Rotulos</option>
+                    <option value="amortiguadores">Amortiguadores</option>
+                </select>
+
+            <label for="consultaLocal" class="marginRight">
+                    <input id="consultaLocal" type="checkbox" name="" value="" > Local
+                </label>
+
+            <input type="submit" class="btn btn-danger" value="Buscar" />
+        </form>
+
+
+        <div id="table_div"></div>
+
+    </div>
+<!--display: none; -->
+<div class="container" id="contenedor" style="display: none;position:fixed;bottom:0;">
+    <div class="alert alert-danger" id="alerta">
+        <a href="#" class="close">&times;</a>
+        <strong><p id="mensaje"> </p></strong>.
+    </div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
